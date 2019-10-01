@@ -9,7 +9,7 @@ class Project extends Model {
   }
 
   tasks () {
-    return this.belongsToMany('App/Models/Task')
+    return this.hasMany('App/Models/Task')
   }
 }
 
